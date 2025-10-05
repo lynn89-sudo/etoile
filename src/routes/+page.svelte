@@ -8,6 +8,19 @@
     :global(html,body) {
         margin: 0;
         padding: 0;
+        background-color: black;
+
+        font-family: Montserrat;
+    }
+
+    .navbar {
+        position: absolute;
+        z-index: 1000;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 70px;
+        overflow: hidden;
     }
 
     #wrapper {
@@ -28,17 +41,24 @@
         }
     }
 
-</style>
+    #content {
+        background-color: rgb(41,41,42);
+        padding: 20px;
+    }
 
+</style>
+<Navbar class="navbar"/>
 <div id="wrapper">
-    <Navbar />
     <div id="view">
-        <img src="logo/logo-dark.png" style="width: 20%; height: auto; left: 40%; right: 40%; top: 110px;" alt="Halo" />
-        <img src="views/main/2.png" alt="Halo" />
-        <img src="views/main/3.png" alt="Halo" />
-        <img src="views/main/4.png" alt="Halo" />
-        <img src="views/main/5.png" alt="Halo" />
-        <img src="views/main/6.png" alt="Halo" />
-        <img src="views/main/7.png" alt="Halo" />
+        <img src="logo/logo-dark.png" style="width: 20%; height: auto; left: 40%; right: 40%; top: 110px;" alt="Logo" />
+        <img src="views/main/4.png" alt="Cloud Layer" />
+        <img src="views/main/5.png" alt="Cloud Layer" />
+        <img src="views/main/6.png" alt="Cloud Layer" />
+        <img src="views/main/7.png" alt="Cloud Layer" />
+    </div>
+    <div id="content">
+        <br><br>
+        <h1 style="font-weight: 800">What is Étoile?</h1>
+        <h3>Qu'est-ce que l'Étoile?</h3>
     </div>
 </div>
