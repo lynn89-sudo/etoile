@@ -13,16 +13,6 @@
         font-family: Montserrat;
     }
 
-    .navbar {
-        position: absolute;
-        z-index: 1000;
-        top: 0;
-        right: 0;
-        left: 0;
-        height: 70px;
-        overflow: hidden;
-    }
-
     #wrapper {
         background-image: linear-gradient(rgb(6,17,29), rgb(84,19,51));
         min-height: 100vh;
@@ -47,7 +37,7 @@
     }
 
 </style>
-<Navbar class="navbar"/>
+<Navbar/>
 <div id="wrapper">
     <div id="view">
         <img src="logo/logo-dark.png" style="width: 20%; height: auto; left: 40%; right: 40%; top: 110px;" alt="Logo" />
