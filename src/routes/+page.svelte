@@ -18,13 +18,13 @@
 
     #view {
         position: relative;
-        aspect-ratio: 1/1;
+        aspect-ratio: 1/0.56;
         margin: 0 auto;
 
         img {
             position: absolute;
-            width: 50%;
-            height: 50%;
+            width: 100%;
+            height: 100%;
         }
     }
 
@@ -33,6 +33,12 @@
 <div id="wrapper">
     <Navbar />
     <div id="view">
-
+        <img src="logo/logo-dark.png" style="width: 20%; height: auto; left: 40%; right: 40%; top: 110px;" alt="Halo" />
+        <img src="views/main/2.png" alt="Halo" />
+        <img src="views/main/3.png" alt="Halo" />
+        <img src="views/main/4.png" alt="Halo" />
+        <img src="views/main/5.png" alt="Halo" />
+        <img src="views/main/6.png" alt="Halo" />
+        <img src="views/main/7.png" alt="Halo" />
     </div>
 </div>
