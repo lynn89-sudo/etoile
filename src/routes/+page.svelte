@@ -23,6 +23,7 @@
         position: relative;
         aspect-ratio: 1/0.56;
         margin: 0 auto;
+        overflow: hidden;
 
         img {
             position: absolute;
@@ -35,15 +36,16 @@
             height: auto; 
             left: 40%; 
             right: 40%; 
-            top: 90px;
+            top: 150px;
         }
     }
 
-    @media screen and (min-width: 900px) {
-        :global(#logo-view) {
-            top: 110px;
+    @media screen and (max-width: 900px) {
+        #view #logo-view {
+            top: 100px;
         }
     }
+
 
     #content {
         background-color: rgb(41,41,42);
@@ -52,15 +54,32 @@
         text-align: center;
     }
 
+    @keyframes cloud-move {
+        0% {transform: translateY(0px);}
+        50% {transform: translateY(20px);}
+        100% {transform: translateY(0px);}
+    }
+
+    #cloud1{
+        animation: cloud-move 5s ease-in-out infinite;
+    }
+    #cloud2{
+        animation: cloud-move 5s ease-in-out infinite;
+        animation-delay: 0.5s;
+    }
+    #cloud3{
+        animation: cloud-move 5s ease-in-out infinite;
+        animation-delay: 1.2s;
+    }
+
 </style>
 <Navbar/>
 <div id="wrapper">
     <div id="view">
         <img src="logo/logo-dark.png" id="logo-view" alt="Logo" translate = "no"/>
-        <img src="views/main/2.png" alt="abel" />
-        <img src="views/main/4.png" alt="Cloud Layer" />
-        <img src="views/main/5.png" alt="Cloud Layer" />
-        <img src="views/main/6.png" alt="Cloud Layer" />
+        <img src="views/main/4.png" alt="Cloud Layer" id="cloud1"/>
+        <img src="views/main/5.png" alt="Cloud Layer" id="cloud2"/>
+        <img src="views/main/6.png" alt="Cloud Layer" id = "cloud3"/>
         <img src="views/main/7.png" alt="Cloud Layer" />
     </div>
     <div id="content">
