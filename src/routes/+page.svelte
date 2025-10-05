@@ -29,18 +29,35 @@
             width: 100%;
             height: 100%;
         }
+
+        #logo-view {
+            width: 20%; 
+            height: auto; 
+            left: 40%; 
+            right: 40%; 
+            top: 90px;
+        }
+    }
+
+    @media screen and (min-width: 900px) {
+        :global(#logo-view) {
+            top: 110px;
+        }
     }
 
     #content {
         background-color: rgb(41,41,42);
         padding: 20px;
+
+        text-align: center;
     }
 
 </style>
 <Navbar/>
 <div id="wrapper">
     <div id="view">
-        <img src="logo/logo-dark.png" style="width: 20%; height: auto; left: 40%; right: 40%; top: 110px;" alt="Logo" />
+        <img src="logo/logo-dark.png" id="logo-view" alt="Logo" translate = "no"/>
+        <img src="views/main/2.png" alt="abel" />
         <img src="views/main/4.png" alt="Cloud Layer" />
         <img src="views/main/5.png" alt="Cloud Layer" />
         <img src="views/main/6.png" alt="Cloud Layer" />

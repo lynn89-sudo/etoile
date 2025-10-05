@@ -22,7 +22,7 @@
         right: 0;
         left: 0;
         height: 70px;
-        background-color: rgba(34, 34, 34, 0.486);
+        background-color: rgba(34, 34, 34, 0.884);
         overflow: hidden;
 
         user-select: none;
